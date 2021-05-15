@@ -14,9 +14,9 @@ public class DBUtil {
         //加载数据库账户、密码、url
         Properties ppt = new Properties();
         //远程数据库
-        InputStream is = DBUtil.class.getClassLoader().getResourceAsStream("ServiceDb.properties");
+        //InputStream is = DBUtil.class.getClassLoader().getResourceAsStream("ServiceDb.properties");
         //本地数据库
-        //InputStream is = DBUtil.class.getClassLoader().getResourceAsStream("LocalDb.properties");
+        InputStream is = DBUtil.class.getClassLoader().getResourceAsStream("LocalDb.properties");
         try {
             ppt.load(is);
             url = ppt.getProperty("url");

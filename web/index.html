@@ -27,7 +27,7 @@
 					    <div id="d1" class="tab-pane fade in active">
 							<div class="panel panel-default panel_content">
 								<div class="panel-heading">
-									<h3 class="panel-title"> 
+									<h3 class="panel-title">
 										第一步：填写你的基本信息（1/5）
 									</h3>
 								</div>
@@ -112,8 +112,9 @@
 									</div>
 								</div>
 							</div>
-							
+
 					    </div>
+<!--						 第一个div 基本信息-->
 					    <div id="d2" class="tab-pane fade">
 					       <div class="panel panel-default panel_content">
 					       	<div class="panel-heading">
@@ -161,6 +162,7 @@
 					       	</div>
 					       </div>
 					    </div>
+						<!-- 第二个div -->
 					    <div id="d3" class="tab-pane fade">
 					        <div class="panel panel-default panel_content">
 					        	<div class="panel-heading">
@@ -208,6 +210,7 @@
 					        	</div>
 					        </div>
 					    </div>
+						<!-- 第三个div -->
 						<div id="d4" class="tab-pane fade">
 							<div class="panel panel-default panel_content">
 								<div class="panel-heading">
@@ -233,6 +236,7 @@
 								</div>
 							</div>
 						</div>
+						<!-- 第四个div -->
 						<div id="d5" class="tab-pane fade">
 
 							<div class="panel panel-default panel_content">
@@ -279,8 +283,9 @@
 								</div>
 							</div>
 						</div>
+						<!-- 第5个div -->
+<!--						之后是第6个div-->
 						<div id="d6" class="tab-pane fade">
-
 						<div class="panel panel-default panel_content">
 							<div class="panel-heading">
 								<h3 class="panel-title">
@@ -290,10 +295,12 @@
 							<div class="panel-body">
 								<div class="center">
 									<h1>{{title}}</h1>
+<!--									返回的结果：是否生成对应的简历-->
 									<h3 v-html="result"></h3>
-									<br>
-									<div class="submit">
+									<br> <!-- 换行 -->
+									<div class="submit"> <!-- 使用bootstrap表单样式进行提交数据 -->
 										<div class="center_content">
+<!--											window.location.reload(true) //浏览器重新从服务器请求资源,在http请求头中不会包含缓存标记。-->
 											<a class="btn btn-info btn-block" href="javascript:window.location.reload()" data-toggle="tab">再生成一个</a>
 										</div>
 									</div>

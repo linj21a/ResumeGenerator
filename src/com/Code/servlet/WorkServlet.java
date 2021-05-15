@@ -32,6 +32,8 @@ public class WorkServlet extends HttpServlet {
         String job = request.getParameter("job");
         String description = request.getParameter("description");
         Work work = new Work(userId,start,end,company,job,description);
+
+        //更新
         int row = DBService.insertWork(work);
         Result result = null;
         if(row>0){

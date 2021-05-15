@@ -124,7 +124,7 @@ const v1 = new Vue({
             //录入userid
             v1.skill.userid=v1.user.id;
         },
-        submitClick:function(){
+        submitClick:function(){//最后一个表单使用submit会触发，提交表单数据
             //录入specialty1和specialty2的userid
             v1.specialty1.userid=v1.user.id;
             v1.specialty2.userid=v1.user.id;
@@ -174,6 +174,7 @@ const v1 = new Vue({
                                             v1.count++;
                                             if(v1.count == 2){
                                                 v1.title = "生成成功：";
+                                                //返回表单的结果，跳转到u.html界面，使用对应userid的数据来刷新页面。
                                                 v1.result = "访问地址：<a href='u.html?userid="+v1.user.id+"'>点击访问</a>"
                                             }
 

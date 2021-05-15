@@ -33,7 +33,7 @@ public class InfoServlet extends HttpServlet {
         }else{
             result = new Result(-1,"查询失败，不存在");
         }
-        response.getWriter().append(result.toJSON());
+        response.getWriter().append(result.toJSON());//将数据发送给客户端
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
