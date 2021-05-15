@@ -4,9 +4,6 @@
 
 ## 演示效果 
 
-<a href="">演示视频</a>
-## 数据库设计
-
-## 前端代码——模板文件
-
-## 后端代码设计图
+<a href="https://github.com/linj21a/ResumeGenerator/blob/master/%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91.gif">演示视频</a>
+## 设计说明
+<a href="https://github.com/linj21a/ResumeGenerator/tree/master/%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E">设计图</a>
